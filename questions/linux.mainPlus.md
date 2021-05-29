@@ -295,7 +295,7 @@ used = total - free - buff/cache
 <details>
   <summary>Ответ</summary>
 
-![](img/example-request.jpg)
+![](imgs/example-request.jpg)
 
 Любой URL содержит следующую структуру `<протокол>/<хост>/путь`, например `https://yandex.ru/pogoda/samara`. Также URL может содержать данные для отображения страницы.
 
