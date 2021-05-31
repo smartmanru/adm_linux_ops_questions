@@ -384,3 +384,26 @@ Taints и Tolerations не гарантирует, что определенны
 2379 используется для взаимодействия etcd с компонентами control plane. 2380 используется только для взаимодействия компонентов etcd в кластере, при наличии множества master нод в кластере.
 
 </details>
+
+28. Задан следующий yaml файл для создания пода Test. Как сделать так, чтобы контейнеры nginx и redis пода test были размещены разных нодах кластера при условии, что существуют лейблы нод `disk=ssd` и `disk=hard`?
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  - name: redis
+    image: redis
+  nodeSelector:
+    disk: ssd
+```
+
+<details>
+  <summary>Ответ</summary>
+
+Никак. Контейнеры одного пода могут размещаться только на одинаковой ноде. Под является неделимой сущностью Kubernetes.
+
+</details>
