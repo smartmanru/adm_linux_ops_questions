@@ -2,8 +2,6 @@
 
 В данном репозитории представлены вопросы для собеседований по основным темам Linux инженера и/или DevOps инженера. Вопросы разделены на темы в файла markdown.
 
----
-
 ## Основные темы:
 1. [Linux. Basic](questions/linux.basic.md)
 2. [Linux. Main+](questions/linux.mainPlus.md)
@@ -13,7 +11,7 @@
 6. [Terraform](questions/terraform.md)
 7. [Docker](questions/docker.md)
 8. [Ansible](questions/ansible.md)
-9. [Kubernetes / Openshift](qustions/kubernetes.md)
+9. [Kubernetes / Openshift](questions/kubernetes.md)
 10. [Тестовые практические задания](questions/practice.md)
 
 ---
