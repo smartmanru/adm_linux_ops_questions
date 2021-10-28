@@ -103,3 +103,20 @@ Trunk-based Development (TBD) - модель ветвления, в которо
 
 </details>
 
+7. Состояние репозитория ушло на много коммитов вперед. Как откатить весь репозиторий к определенному коммиту?
+
+<details>
+  <summary>Ответ</summary>
+
+git reset --hard <tag/branch/commit hash>
+
+</details>
+
+8. В репозиторий запушен коммит с изменениями в двух файлах. Как откатить изменения этого коммита?
+
+<details>
+  <summary>Ответ</summary>
+
+git revert <commit hash>
+
+</details>

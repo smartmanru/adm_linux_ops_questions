@@ -110,3 +110,15 @@ terraform import aws_s3_bucket.sample_bucket tyx-local-bucket
 *outputs.tf* - описание выходных переменных. Необязательный файл, но очень удобно выделять нужные параметры из созданного инстанса, например IP созданного в облаке инстанса.
 
 </details>
+
+9. Как конвертировать Kubernetes yaml-манифест в HCL средствами Linux и terraform?
+
+<details>
+  <summary>Ответ</summary>
+
+Например:
+```
+echo 'yamldecode(file("filename.yaml"))' | terraform console
+```
+
+</details>
